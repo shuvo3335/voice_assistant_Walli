@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/newloc_g"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/relCo">
+
+        <include
+            android:id="@+id/inc"
+            layout="@layout/activity_maps"
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="18dp" />
+
+        <TextView
+            android:id="@+id/a"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/inc"
+            android:fontFamily="sans-serif"
+            android:gravity="center_horizontal|center_vertical"
+            android:padding="10sp"
+            android:text="hello this is the default,pls turn on location and internet"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+    </RelativeLayout>
+</LinearLayout>
